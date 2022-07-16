@@ -30,10 +30,14 @@ function claro() {
     const body = document.querySelector('.body');
     const footer = document.querySelector('.rodape');
     const link = document.querySelector('.link');
+    const button = document.querySelector('.btn');
     body.style.backgroundColor = 'rgb(245, 212, 212)';
     body.style.color = 'black';
     footer.style.color = 'black';
     link.style.color = 'black';
+    button.style.opacity = '0'; 
+  
+
 
 }
    

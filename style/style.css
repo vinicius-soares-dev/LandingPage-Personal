@@ -68,12 +68,13 @@ ul > li > a {
     text-transform: uppercase;
     font-family: var(--fontsecundaria);
     letter-spacing: 1px;
+    font-weight: bold;
    
 }
 
 ul > li > a:hover {
     color: #fff;
-    font-weight: bold;
+    font-weight: bolder;
     background-repeat: no-repeat;
     transition: 2s ease-in-out;
     
