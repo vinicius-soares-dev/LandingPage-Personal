@@ -20,6 +20,7 @@ body {
 .cabecalho {
     background: linear-gradient(#1e3c72, #2a5298);
     padding: 30px;
+    box-shadow: 0px 21px 28px 6px #0000003f;
 }
 
 
