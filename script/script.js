@@ -1,46 +1,22 @@
-const btn = document.querySelector('.btn');
+const darkMode = document.querySelector('.dark');
+const lightMode = document.querySelector('.light');
 
-btn.addEventListener('click', function(event) {
+darkMode.addEventListener('click', function(event) {
     event.preventDefault();
-    const botao = event.target.querySelector('.btn');
-    modoEscuro(botao);
-});
-
-function modoEscuro() {
     const body = document.querySelector('.body');
-    const footer = document.querySelector('.rodape');
     const link = document.querySelector('.link');
-    body.style.backgroundColor = 'black';
+    body.style.background = 'black';
     body.style.color = 'white';
-    footer.style.color = 'white';
     link.style.color = 'white';
-    modoClaro();
-}
-
-function modoClaro() {
-   const newF = document.querySelector('.btn');
-   newF.innerHTML = 'Modo Claro';
-   newF.addEventListener('click', function(event) {
-    event.preventDefault();
-    const botao = event.target.querySelector('.btn');
-    claro(botao);
 });
 
-function claro() {
-    const body = document.querySelector('.body');
-    const footer = document.querySelector('.rodape');
+lightMode.addEventListener('click', function(e) {
+    e.preventDefault();
+    const corpo = document.querySelector('.body');
     const link = document.querySelector('.link');
-    const button = document.querySelector('.btn');
-    body.style.backgroundColor = 'rgb(245, 212, 212)';
-    body.style.color = 'black';
-    footer.style.color = 'black';
+    corpo.style.background = '#f5d4d4';
+    corpo.style.color = 'black';
     link.style.color = 'black';
-    button.style.opacity = '0'; 
-  
-
-
-}
-   
-}
+})
 
 
